@@ -25,7 +25,8 @@ pipeline{
         stage('Checkout'){
             steps{
                 git url: 'https://github.com/BatuhanGencalp/OrangeHRM.git',
-                credentialsId: 'Batu-PAT'
+                branch: 'main',
+                credentialsId: 'Batu-PATH'
             }
         }
         stage('UI Tests'){
